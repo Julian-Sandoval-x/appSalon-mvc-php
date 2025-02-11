@@ -2,8 +2,6 @@
 
 namespace Model;
 
-use Model\ActiveRecord;
-
 class User extends ActiveRecord
 {
 
