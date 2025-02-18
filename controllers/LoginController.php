@@ -2,9 +2,9 @@
 
 namespace Controllers;
 
-use Model\User;
 use MVC\Router;
 use Classes\Email;
+use Model\User;
 
 class LoginController
 {
