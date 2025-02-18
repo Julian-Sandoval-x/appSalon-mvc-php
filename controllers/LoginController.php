@@ -39,9 +39,9 @@ class LoginController
                         } else {
                             header('Location: /cita');
                         }
-                    } else {
-                        User::setAlerta('error', 'El usuario no existe');
                     }
+                } else {
+                    User::setAlerta('error', 'El usuario no existe');
                 }
             }
         }
