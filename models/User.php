@@ -126,7 +126,7 @@ class User extends ActiveRecord
         $this->token = uniqid();
     }
 
-    public function comprobarPasswordAndConfirmado($password)
+    public function comprobarPasswordAndVerificado($password)
     {
         $resultado = password_verify($password, $this->password);
 
