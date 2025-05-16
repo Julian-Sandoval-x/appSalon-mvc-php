@@ -19,14 +19,14 @@ $router->post('/', [LoginController::class, 'login']);
 $router->get('/logout', [LoginController::class, 'logout']);
 
 // Recuperar Contraseña
-$router->get('/forgot', [LoginController::class, 'forgot']);
-$router->post('/forgot', [LoginController::class, 'forgot']);
-$router->get('/recovery', [LoginController::class, 'recovery']);
-$router->post('/recovery', [LoginController::class, 'recovery']);
+$router->get('/forgot', [LoginController::class, 'olvide']);
+$router->post('/forgot', [LoginController::class, 'olvide']);
+$router->get('/recovery', [LoginController::class, 'recuperar']);
+$router->post('/recovery', [LoginController::class, 'recuperar']);
 
 // Crear cuenta
-$router->get('/crear-cuenta', [LoginController::class, 'crearCuenta']);
-$router->post('/crear-cuenta', [LoginController::class, 'crearCuenta']);
+$router->get('/crear-cuenta', [LoginController::class, 'crear']);
+$router->post('/crear-cuenta', [LoginController::class, 'crear']);
 
 // Confirmar cuenta
 $router->get('/confirmar-cuenta', [LoginController::class, 'confirmar']);

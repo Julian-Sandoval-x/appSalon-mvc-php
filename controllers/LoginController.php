@@ -22,7 +22,7 @@ class LoginController
 
                 if ($User) {
                     // Verificar el password
-                    if ($User->comprobarPasswordAndVerificado($auth->password)) {
+                    if ($User->comprobarPasswordAndConfirmado($auth->password)) {
                         // Autenticar el User
                         session_start();
 
